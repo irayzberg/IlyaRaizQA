@@ -27,3 +27,5 @@ while i == 0:
             i = 1
     except ValueError:
         print("Ошибка")
+        
+        
