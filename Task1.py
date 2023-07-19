@@ -17,7 +17,7 @@
 
 i = 0
 while i == 0:
-    number = input("Введите целое число: ")
+    number = (input("Введите целое число: "))
     try:
         if int(number)%2 == 0:
             print("Число ", number, " чётное.")
