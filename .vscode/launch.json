@@ -5,6 +5,20 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "Task1",
+            "request": "launch",
+            "mainClass": "Task1",
+            "projectName": "IlyaRaizQA_4382674c"
+        },
+        {
+            "type": "java",
+            "name": "Task3",
+            "request": "launch",
+            "mainClass": "Task3",
+            "projectName": "IlyaRaizQA_4382674c"
+        },
+        {
             "name": "Python: Current File",
             "type": "python",
             "request": "launch",
