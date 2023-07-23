@@ -58,21 +58,16 @@ while i <= 5:
         b = random.randrange(10,99)
         c = a*b
         d = input(f'{a}*{b} = ')
+        i += 1
         if c == int(d):
             print("Правильно! Молодец!")
-            i += 1
         else:
-            i += 1
             p += 1
             print("Неверно!")
         if p > 2:
             print("Не сдал") 
             break  
     except ValueError:
-        print("Введите ответ в виде целого числа!")
-if p == 0:   
-    print("Оценка 5!")
-if p == 1:
-    print("Оценка 4!") 
-if p == 2:
-    print("Оценка 3!")
+        print("Введите ответ в виде целого числа!") 
+print(f'Оценка {5-p}')
+
