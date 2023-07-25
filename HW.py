@@ -27,47 +27,49 @@
 # while i == 0:
 #     price = input("Введите стоимость покупки: ")
 #     try:
+#         i = 1
 #         if float(price) >= 20:
 #             new_price = 0.65*float(price)
 #             print("Сумма покупки:", new_price)
-#             i = 1
-#         else:
+#         else:1
 #             print("Сумма покупки:", price)
-#             i = 1
 #     except ValueError:
 #         print("Ошибка!")
 
 # 4. Посчитать количество символов во фразе, введенной с клавиатуры, с помощью циклов
 
+# import re 
+
 # text = input("Введите текст: ")
+# text1 = re.split("\W+",text)
 # count = 0
-# for i in text:
+# for i in ''.join(text1):
 #     count += 1
 # print("Количество символов:", count)
 
 # 5. Проверка умножения однозначного числа на двузначное
 
-import random
+# import random
 
-i = 1
-p = 0
-print("Попробуй решить примеры: ")
-while i <= 5:
-    try:
-        a = random.randrange(2,9)
-        b = random.randrange(10,99)
-        c = a*b
-        d = input(f'{a}*{b} = ')
-        i += 1
-        if c == int(d):
-            print("Правильно! Молодец!")
-        else:
-            p += 1
-            print("Неверно!")
-        if p > 2:
-            print("Не сдал") 
-            break  
-    except ValueError:
-        print("Введите ответ в виде целого числа!") 
-print(f'Оценка {5-p}')
+# i = 1
+# p = 0
+# print("Попробуй решить примеры: ")
+# while i <= 5:
+#     try:
+#         a = random.randrange(2,9)
+#         b = random.randrange(10,99)
+#         c = a*b
+#         d = input(f'{a}*{b} = ')
+#         i += 1
+#         if c == int(d):
+#             print("Правильно! Молодец!")
+#         else:
+#             p += 1
+#             print("Неверно!")
+#         if p > 2:
+#             print("Не сдал") 
+#             break  
+#     except ValueError:
+#         print("Введите ответ в виде целого числа!") 
+# print(f'Оценка {5-p}')
 
