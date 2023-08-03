@@ -20,8 +20,16 @@ def multiply(num1, num2):
     res = ''.join(map(str, res))
     return(res)
 
-
-num1 = input("Введите первое число: ")
-num2 = input("Введите второе число: ")
-res = multiply(num1, num2)
-print(num1, "*", num2, "=", res)
+p = True
+while p == True:
+    try:
+        num1 = input("Введите первое число: ")
+        num2 = input("Введите второе число: ")
+        res = multiply(num1, num2)
+        if num1 == '' or num2 == '':
+            print("Ошибка")
+        else:
+            print(num1, "*", num2, "=", res)
+            p = False
+    except ValueError:
+        print("Ошибка")
