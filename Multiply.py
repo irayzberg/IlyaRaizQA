@@ -21,7 +21,7 @@ def multiply(num1, num2):
     return(res)
 
 p = True
-while p == True:
+while p is True:
     try:
         num1 = input("Введите первое число: ")
         num2 = input("Введите второе число: ")
